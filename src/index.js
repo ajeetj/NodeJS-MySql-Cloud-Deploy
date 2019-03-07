@@ -1,8 +1,8 @@
 const server = require("./server");
 const seeder = require("./data/seeder");
 
-server.listen("9090", () => {
-    console.log('API server started on: 9090');
+server.listen("8080", () => {
+    console.log('API server started on: 8080');
     setImmediate(() => {
         seeder.initMigration()
             .catch(error => {

@@ -9,7 +9,7 @@ function list_all_tasks(req, res) {
           return res.send(response);
       })
       .catch(error => {
-          logger.error(`failed to fetch the tasks`, { error });
+          console.log(`failed to fetch the tasks`, { error });
           return res.status(500).send(response);
       });
 }
