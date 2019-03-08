@@ -4,7 +4,7 @@ const taskController = require("../controller/appController");
 
 router.route('/status')
     .get(function (req, res) {
-        res.send({ message: "server is up and running!" });
+        res.send({ message: "App server is up and running .." });
     });
 
 router.route("/tasks")
