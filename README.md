@@ -101,14 +101,18 @@ $ docker run -it --rm -p 8080:8080 \
 
 1. Naviate to "Overview" and copy the URL of that app. Now your app should be live. 
    Check the two routes that we have added. 
+   ```
    <URL>/status
    <URL>/tasks
+   ```
 
-#### Trouble shooting
+#### Troubleshooting
 1. Navigate to "Log Stream" if the APP is not up. Check for the errors.
 1. You can get MySQL settings from "Application Settings" -> "Connection Strings" 
+<pre>
 
 
+</pre>
 ### Continous Delivery
 
 1. Click on "Deployment Center" inside your App Service. 
@@ -121,17 +125,21 @@ $ docker run -it --rm -p 8080:8080 \
 1. Set rest of the parameters and click "OK".
 
 1. Give it a few mins and you are all set. If you push anything in your master branch it will be automatically deployed to your App Service. 
+<pre>
 
 
+</pre>
 
 ## Deploy to AWS
 
  TBD
 
+<pre>
 
+
+</pre>
  ## Deploy to GCP
 
 
  TBD
 
- 
