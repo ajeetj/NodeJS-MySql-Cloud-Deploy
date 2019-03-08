@@ -78,9 +78,11 @@ $ docker run -it --rm -p 8080:8080 \
 1. Create "Web App for Containers + MySql"
 
    `Search the Web App`
+
    <img alt="Create Web App" src="https://github.com/ajeetj/NodeJS-MySql-Cloud-Deploy/blob/master/src/img/search-web-app.png" width="400">
 
    `Create Web App`
+
    <img alt="Create Web App" src="https://github.com/ajeetj/NodeJS-MySql-Cloud-Deploy/blob/master/src/img/create-web-app+mysql.png" width="200">
  
     
@@ -94,6 +96,7 @@ $ docker run -it --rm -p 8080:8080 \
 1. Go to the App Server & Set env fields in Application Settings. 
 
    <img alt="Setting env variables" src="https://github.com/ajeetj/NodeJS-MySql-Cloud-Deploy/blob/master/src/img/env-var.png" width="400">
+   
    Restart the app if the variable are not propogated right away. 
 
 1. Naviate to "Overview" and copy the URL of that app. Now your app should be live. 
@@ -120,3 +123,15 @@ $ docker run -it --rm -p 8080:8080 \
 1. Give it a few mins and you are all set. If you push anything in your master branch it will be automatically deployed to your App Service. 
 
 
+
+## Deploy to AWS
+
+ TBD
+
+
+ ## Deploy to GCP
+
+
+ TBD
+
+ 
