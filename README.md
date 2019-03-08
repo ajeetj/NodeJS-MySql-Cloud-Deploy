@@ -79,7 +79,7 @@ Ref https://docs.microsoft.com/en-us/azure/container-registry/container-registry
  -- details
 
 1. Set env fields in Application Settings
-<img alt="Setting env variables" src="https://github.com/ajeetj/NodeJS-MySql-Cloud-Deploy/blob/master/src/img/env-var.png" width="150">
+<img alt="Setting env variables" src="https://github.com/ajeetj/NodeJS-MySql-Cloud-Deploy/blob/master/src/img/env-var.png" width="400">
 
 
 Trouble shooting
