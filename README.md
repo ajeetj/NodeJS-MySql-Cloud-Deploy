@@ -75,13 +75,42 @@ Ref https://docs.microsoft.com/en-us/azure/container-registry/container-registry
     ```
 1. Verify that your image is visible in `Container registry -> Repositories`
 
-1. Create Web App with MySql
- -- details
+1. Create "Web App for Containers + MySql"
+ <img alt="Create Web App" src="https://github.com/ajeetj/NodeJS-MySql-Cloud-Deploy/blob/master/src/img/search-web-app.png" width="400">
 
-1. Set env fields in Application Settings
+ <img alt="Create Web App" src="https://github.com/ajeetj/NodeJS-MySql-Cloud-Deploy/blob/master/src/img/create-web-app+mysql.png" width="400">
+ 
+    
+1. Inside "Configure Container" click on "Azure Container Registry" and select the image that you just uploaded.
+<img alt="Create Web App" src="https://github.com/ajeetj/NodeJS-MySql-Cloud-Deploy/blob/master/src/img/configure-container.png" width="400">
+
+1. After entering all the details click on "Create"
+
+1. This will take few mins and will launch all the resources. 
+
+1. Go to the App Server & Set env fields in Application Settings. 
 <img alt="Setting env variables" src="https://github.com/ajeetj/NodeJS-MySql-Cloud-Deploy/blob/master/src/img/env-var.png" width="400">
+Restart the app if the variable are not propogated right away. 
+
+1. Naviate to "Overview" and copy the URL of that app. Now your app should be live. 
+Check the two routes that we have added. 
+<URL>/status
+<URL>/tasks
+
+#### Trouble shooting
+1. Navigate to "Log Stream" if the APP is not up. Check for the errors.
+1. You can get MySQL settings from "Application Settings" -> "Connection Strings" 
 
 
-Trouble shooting
-Go to mysqlDatabase server -> Connection string and verify that you have used the right ones.
+### Continous Delivery
+
+1. Click on "Deployment Center" inside your App Service. 
+<img alt="Setting env variables" src="https://github.com/ajeetj/NodeJS-MySql-Cloud-Deploy/blob/master/src/img/configure-continuous-delivery.png" width="400">
+
+1. Select "Github" in "Source Code". 
+   You will have to authenticate with your github account. 
+1. Set rest of the parameters and click "OK".
+
+1. Give it a few mins and you are all set. If you push anything in your master branch it will be automatically deployed to your App Service. 
+
 
