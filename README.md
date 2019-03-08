@@ -76,6 +76,7 @@ $ docker run -it --rm -p 8080:8080 \
 1. Verify that your image is visible in `Container registry -> Repositories`
 
 1. Create "Web App for Containers + MySql"
+
    `Search the Web App`
    <img alt="Create Web App" src="https://github.com/ajeetj/NodeJS-MySql-Cloud-Deploy/blob/master/src/img/search-web-app.png" width="400">
 
@@ -91,6 +92,7 @@ $ docker run -it --rm -p 8080:8080 \
 1. This will take few mins and will launch all the resources. 
 
 1. Go to the App Server & Set env fields in Application Settings. 
+
    <img alt="Setting env variables" src="https://github.com/ajeetj/NodeJS-MySql-Cloud-Deploy/blob/master/src/img/env-var.png" width="400">
    Restart the app if the variable are not propogated right away. 
 
@@ -107,6 +109,7 @@ $ docker run -it --rm -p 8080:8080 \
 ### Continous Delivery
 
 1. Click on "Deployment Center" inside your App Service. 
+
    <img alt="Setting env variables" src="https://github.com/ajeetj/NodeJS-MySql-Cloud-Deploy/blob/master/src/img/configure-continuous-delivery.png" width="300">
 
 1. Select "Github" in "Source Code". 
