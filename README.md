@@ -79,7 +79,7 @@ Ref https://docs.microsoft.com/en-us/azure/container-registry/container-registry
  -- details
 
 1. Set env fields in Application Settings
-![Setting env variables](https://github.com/ajeetj/NodeJS-MySql-Cloud-Deploy/blob/master/src/img/env-var.png | width=200)
+![Setting env variables](https://github.com/ajeetj/NodeJS-MySql-Cloud-Deploy/blob/master/src/img/env-var.png){:height="24px" width="48px"}
 
 Trouble shooting
 Go to mysqlDatabase server -> Connection string and verify that you have used the right ones.
