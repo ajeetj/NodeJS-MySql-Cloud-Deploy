@@ -133,13 +133,50 @@ $ docker run -it --rm -p 8080:8080 \
 
 ## Deploy to AWS
 
+1. Sign up for AWS Free TIER Account
+1. Create a Container registry (ECR) to store docker images
+1. Install AWS CLI and Configure it for your account. [https://aws.amazon.com/cli/]
+1. Follow the push command to upload the image into registry. 
+    
+    <img alt="Setting env variables" src="https://github.com/ajeetj/NodeJS-MySql-Cloud-Deploy/blob/master/src/img/aws-repository.png" width="300">
+
+1. Now go to ECS {Elastic Container Service} and click "Get started".
+1. Select "custom" Configuration and complete details as asked. 
+    Use Load-Balancer to start 
+    
+    <img alt="Setting env variables" src="https://github.com/ajeetj/NodeJS-MySql-Cloud-Deploy/blob/master/src/img/aws-ecs-configuration.png" width="300">
+
+1. It will take few mins to setup all the resources. After that is done, go back to task definitions and create new version. 
+    
+    <img alt="Setting env variables" src="https://github.com/ajeetj/NodeJS-MySql-Cloud-Deploy/blob/master/src/img/aws-new-task-definition.png" width="300">
+
+1. Click "Configure via JSON" and add your env variables. 
+   
+    <img alt="Setting env variables" src="https://github.com/ajeetj/NodeJS-MySql-Cloud-Deploy/blob/master/src/img/aws-tasks-update-env.png" width="300">
+
+1. After that select new verison and click "Update Service".
+1. Go to the service and select "Event" Tab. Wait till the service reaches the "Steady State".
+    
+    <img alt="Setting env variables" src="https://github.com/ajeetj/NodeJS-MySql-Cloud-Deploy/blob/master/src/img/aws-events-log.png" width="300">
+
+1. If it fails then verify your path in Target Group health check is correct. Our App does that on /status endpoint.
+1. Copy your LB DNS name and open it in browser and navigate to <DNS>:port/Status. 
+
+### Continous Delivery
  TBD
 
 &nbsp;
 &nbsp;
 &nbsp;
- ## Deploy to GCP
 
+## Deploy to GCP
+Reference document: https://cloud.google.com/kubernetes-engine/docs/tutorials/hello-app
 
- TBD
+1. Sign up for Google Free Account
+   `Sign up and get $300 to spend on Google Cloud Platform over the next 12 months.`
+   https://console.cloud.google.com/freetrial
+
+2. Create Kubernetes Project
+    Ref Image
+
 
